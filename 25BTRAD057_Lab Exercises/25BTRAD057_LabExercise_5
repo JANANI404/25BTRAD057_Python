@@ -1,1 +1,19 @@
+import random
+number = random.randint(1, 100)
+attempts = 0
 
+print(&quot;Welcome to the Number Guessing Game!&quot;)
+print(&quot;Guess a number between 1 and 100.&quot;)
+
+while True:
+guess = int(input(&quot;Enter your guess: &quot;))
+attempts += 1
+
+if guess &lt; number:
+print(&quot;Too low! Try again.&quot;)
+elif guess &gt; number:
+print(&quot;Too high! Try again.&quot;)
+else:
+print(&quot;Congratulations! You guessed the correct number.&quot;)
+print(&quot;Number of attempts:&quot;, attempts)
+break
